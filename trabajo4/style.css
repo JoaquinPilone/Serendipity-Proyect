@@ -44,9 +44,9 @@
 }
 
 .block-info {
-    background-color: #8e7a54;
+    background-color: #e4c385;
     width: 3fr;
-    margin: 25px;
+    margin: 2rem 5rem 2rem 5rem;
     border: 1px solid black;
     display: grid;
     justify-content: center;
@@ -161,4 +161,30 @@
     display: grid;
     justify-content: center;
     padding: 1rem
+}
+
+/*Transición y para el logo*/
+.logo-ani{
+    transition: all 1s;
+}
+
+/*Aca queria agregarle una animacion para que resaltara el logo pero al no ser png quedaba raro (modificar iconos y imagenes)*/
+.logo-ani:hover{
+    transform: scale(0.8) translate(50px, 20px);
+}
+
+/*Transición y animacion para los bloques de info*/
+.block-info-ani{
+    transition: all 1s;
+}
+
+.block-info-ani:hover{
+    transform: scale(1.1);
+    animation: changecolor 1s;
+}
+
+@keyframes changecolor{
+    10% {
+        background-color: #f0aa3b;
+    }
 }
