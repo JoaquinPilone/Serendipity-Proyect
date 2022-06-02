@@ -13,7 +13,7 @@
 
 .logo {
     width: 306px;
-    height: 66px; 
+    height: 66px;
     margin: 30px;
 }
 
@@ -28,12 +28,15 @@
     grid-template-columns: 15rem 15rem 15rem 15rem;
     grid-template-rows: auto;
     justify-content: center;
+    
+
 }
 
 .menu-item {
-    display: inline-block;
-    padding-bottom: 2rem;
+    display: grid;
+    justify-content: center;
 }
+
 
 /* Bloques de informacion*/
 
@@ -55,74 +58,28 @@
 
 /* Seccion de nuestras maderas*/
 
-.nuestras-maderas{
+.nuestras-maderas {
     margin-bottom: 1rem;
     margin-left: 2rem;
-    justify-content: right;
-
 }
 
-/*Esto me gustaria que se vea una madera a la vez y que se pase como una galeria como muestro en el wirefre*/
-
-.madera1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 3rem 25rem 30rem;
-    margin-left: 8rem;
-    row-gap: 0.5rem;
-    column-gap: 1rem;
-    border: 1px solid black;
-    margin-bottom: 1rem;
-}
-
-.grid-madera1 {
-    grid-area: 1 / 1 / 2 / 3;
-    display: grid;
+.container-madera {
+    width: 75%;
     justify-content: center;
-    margin-top: 1rem;
-}
-
-.grid-madera2 {
-    grid-area: 2 / 2 / 2 / 3;
-    display: grid;
-    padding-top: 8rem;
-}
-
-.grid-madera3 {
-    grid-area: 2 / 2 / 3 / 1;
-    margin-left: 3rem; 
-    width: 90%;
-    height: 90%;
-    border: 1px solid black;
-}
-
-.grid-madera4 {
-    grid-area: 3 / 3 / 3 / 1;
-    margin-left: 3rem; 
-    width: 90%;
-    height: 90%;;
-    border: 1px solid black;
-}
-
-.container-madera{
-    width: 60%;
-    float: left;
 }
 
 .destacados {
     background-color: blanchedalmond;
-    width: 25%;
+    width: 80%;
     border: 1px solid black;
-    margin: 4rem;
-    padding: 2rem;
-    float: left;
+    display: grid;
+    justify-items: center;
 }
 
-.producto-destacados{
+.producto-destacados {
     width: 70%;
-    height: 70%;
-    padding: 10px;
     border: 1px solid black;
+    margin: 0.5rem;
 }
 
 .productos-catalogo {
@@ -142,7 +99,6 @@
     background-color: blanchedalmond;
     width: 50%;
     border: 1px solid black;
-    margin: 2rem;
 }
 
 .cuadro-texto {
@@ -155,41 +111,40 @@
 
 .footer {
     border-top: 1px solid black;
-    clear: both;
 }
 
-.titulo-secundario{
+.titulo-secundario {
     display: grid;
     justify-content: center;
     padding: 1rem
 }
 
 /*Transición y para el logo*/
-.logo-ani{
+.logo-ani {
     transition: all 1s;
 }
 
 /*Aca queria agregarle una animacion para que resaltara el logo pero al no ser png quedaba raro (modificar iconos y imagenes)*/
-.logo-ani:hover{
+.logo-ani:hover {
     transform: scale(0.8) translate(50px, 20px);
 }
 
 /*Transición y animacion para los bloques de info*/
-.block-info-ani{
+.block-info-ani {
     transition: all 1s;
 }
 
-.block-info-ani:hover{
+.block-info-ani:hover {
     transform: scale(1.1);
     animation: changecolor 1s;
 }
 
-@keyframes changecolor{
+@keyframes changecolor {
     10% {
         background-color: #f0aa3b;
     }
 }
 
-.carousel{
-    margin-left: 4rem;
+.carousel {
+    margin-left: 3rem;
 }
