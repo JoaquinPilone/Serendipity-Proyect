@@ -68,16 +68,19 @@
     justify-content: center;
 }
 
+/*ASIDE*/
+
 .destacados {
     background-color: blanchedalmond;
-    width: 80%;
+    width: 30%;
     border: 1px solid black;
     display: grid;
     justify-items: center;
+    margin: 2rem;
 }
 
 .producto-destacados {
-    width: 70%;
+    width: 90%;
     border: 1px solid black;
     margin: 0.5rem;
 }

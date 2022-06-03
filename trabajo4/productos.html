@@ -5,54 +5,94 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
     <title>SerendipityDeco/Productos </title>
 </head>
 
 <body class="body">
     <header class="menu-nav">
-        <a href="index.html"><img class="logo logo-ani" src="images/logo.png" alt="logo"></a>
+        <a href="index.html"><img class="logo logo-ani" src="images/logoserendipit.png" alt="logo"></a>
         <div class="titulo-secundario">
-        <p>Productos</p>
-        <img src="images/icons/Productos-icon.jpg" alt="Productos">
+            <p>Productos</p>
+            <img src="images/icons/Productos-icon.jpg" alt="Productos">
         </div>
     </header>
 
     <main>
-        <section class="productos-catalogo">
-
-            <figure class="producto-item">
-                <img src="images/Productos/Publi1.png" alt="Sillón Luna">
-                <figcaption>Sillon Luna en Petiribi</figcaption>
-            </figure>
-            <figure class="producto-item">
-                <img src="images/Productos/Publi2.png" alt="Mesas Gervasoni Marmol">
-                <figcaption>Mesas Gervasoni Marmol</figcaption>
-            </figure>
-            <figure class="producto-item">
-                <img src="images/Productos/Publi3.jpg" alt="Juego mesa y sillón Gervasoni">
-                <figcaption>Juego mesa y sillón Gervasoni</figcaption>
-            </figure>
-            <figure class="producto-item">
-                <img src="images/Productos/Publi4.jpg" alt="Gervasoni doble y mesa Gervasoni">
-                <figcaption>Gervasoni doble y mesa Gervasoni</figcaption>
-            </figure>
-            <figure class="producto-item">
-                <img src="images/Productos/Publi5.jpg" alt="Recibidor de Petiribi">
-                <figcaption>Recibidor de Petiribi</figcaption>
-            </figure>
-            <figure class="producto-item">
-                <img src="images/Productos/Publi6.jpg" alt="Sillón Otto">
-                <figcaption>Sillón Otto</figcaption>
-            </figure>
-
+        <section class="row">
+            <div class="card m-4 col-6" style="width: 18rem;">
+                <img class="card-img-top" src="images/Productos/Publi1.png" alt="Sillon_Luna">
+                <div class="card-body">
+                    <h5 class="card-title">Sillón Luna</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        ducimus
+                        consectetur, corrupti ea enim nesciunt </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="card m-4 col-6" style="width: 18rem;">
+                <img class="card-img-top" src="images/Productos/Publi2.png" alt="Mesa_Gervasoni_Marmol">
+                <div class="card-body">
+                    <h5 class="card-title">Mesa Gervasoni Marmol</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        ducimus
+                        consectetur, corrupti ea enim nesciunt </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+        </section>
+        <section class="row">
+            <div class="card m-4 col-6" style="width: 18rem;">
+                <img class="card-img-top" src="images/Productos/Publi3.jpg" alt="Sillon_Luna">
+                <div class="card-body">
+                    <h5 class="card-title">Sillón Barry</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        ducimus
+                        consectetur, corrupti ea enim nesciunt </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="card m-4 col-6" style="width: 18rem;">
+                <img class="card-img-top" src="images/Productos/Publi5.jpg" alt="Recibidor_Petiribi">
+                <div class="card-body">
+                    <h5 class="card-title">Recibidor Petiribi</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        ducimus
+                        consectetur, corrupti ea enim nesciunt </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+        </section>
+        <section class="row">
+            <div class="card m-4 col-6" style="width: 18rem;">
+                <img class="card-img-top" src="images/Productos/Publi6.jpg" alt="Sillon_Luna">
+                <div class="card-body">
+                    <h5 class="card-title">Sillón Otto</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        ducimus
+                        consectetur, corrupti ea enim nesciunt </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+            <div class="card m-4 col-6" style="width: 18rem;">
+                <img class="card-img-top" src="images/Productos/Publi7.png" alt="Mesa_Gervasoni_Marmol">
+                <div class="card-body">
+                    <h5 class="card-title">Escritorio Petiribi</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem
+                        ducimus
+                        consectetur, corrupti ea enim nesciunt </p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
         </section>
 
-        <aside class="combos">
-            <h2>Combos</h2>
-            <img src="images/Productos/Juego1.png" alt="Combo x1">
-            <img src="images/Productos/Combo2.jpg" alt="Combo x2">
-            <img src="images/Productos/Combo3.png" alt="Combo x3">
+        <aside class="destacados">
+            <h2>Destacados</h2> <!-- Productos destacados del verano en forma de imagenes-->
+            <P>Conoce nuestra linea de verano</P>
+            <img class="producto-destacados" src="images/Productos/Combo1.png" alt="Combo x1">
+            <img class="producto-destacados" src="images/Productos/Combo2.png" alt="Combo x2">
+            <img class="producto-destacados" src="images/Productos/Combo3.png" alt="Combo x3">
         </aside>
 
     </main>
@@ -91,6 +131,12 @@
 
         <p>|SerendipityDeco|</p>
     </footer>
+
+    <!-- JavaScript Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
 </body>
 
 </html>
